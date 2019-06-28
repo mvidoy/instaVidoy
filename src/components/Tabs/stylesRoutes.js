@@ -1,0 +1,38 @@
+import { StyleSheet } from "react-native";
+
+import { metrics, fonts, colors } from "../../styles";
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: colors.white,
+    height: metrics.tabBarHeight,
+    borderTopWidth: 1,
+    borderColor: colors.lighter,
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center"
+  },
+
+  icon: {
+    color: colors.light
+  },
+
+  active: {
+    color: colors.primary
+    //color: colors.darker
+  },
+
+  main: {
+    width: 30,
+    height: 20,
+    borderRadius: 10,
+    backgroundColor: colors.primary,
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  mainIcon: {
+    color: colors.white
+  }
+});
+
+export default styles;
